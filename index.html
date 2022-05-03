@@ -122,11 +122,11 @@ $(".legend").html(labels.join('<br>'));
 
     L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png').addTo(map);
 
-    geojson = L.geoJson.ajax("assets/obesity.geojson", {
+    geojson = L.geoJson.ajax("Assets/obesity.geojson", {
   style: style
 }).addTo(map);
 
-states = L.geoJson.ajax("assets/dons.geojson", {
+states = L.geoJson.ajax("Assets/dons.geojson", {
   pointToLayer: function (feature, x){
 return L.circleMarker(x, { color: 'purple', opacity: 1,
 weight: 2,
